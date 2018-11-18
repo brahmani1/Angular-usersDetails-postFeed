@@ -1,0 +1,82 @@
+<div class="main-secction">
+	<div class="row">
+		<div class="col-md-12 col-sm-12 col-xs-12 image-section">
+			<img src="https://cdn-images-1.medium.com/max/2000/1*OOWSoWHeQ5kyJ4N0P2ptNA.png">
+    </div>
+    <div class="row container-fluid user-left-part">
+        <div class="col-md-3 col-sm-3 col-xs-12 user-profil-part pull-left">
+            <div class="row ">
+                        <div class="col-md-12 col-md-12-sm-12 col-xs-12 user-image text-center">
+                            <img src="https://www.jamf.com/jamf-nation/img/default-avatars/generic-user-purple.png" class="rounded-circle">
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 user-detail-section1 text-center">
+                            <button id="btn-contact" (click)="clearModal()" data-toggle="modal" data-target="#contact" class="btn btn-success btn-block follow">Contact me</button> 
+                            <button class="btn btn-warning btn-block">My Resume</button>                               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-12 pull-right profile-right-section">
+                    <div class="row profile-right-section-row">
+                        <div class="col-md-12 profile-header">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-6 col-xs-6 profile-header-section1 pull-left">
+                                    <h1>{{user.name}}</h1>
+                                    <h5>Developer</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-8">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                                <li class="nav-item">
+                                                  <a class="nav-link active" href="#profile" role="tab" data-toggle="tab"><i class="fas fa-user-circle"></i> Profile </a>
+                                                </li>
+                                              </ul>
+                                              <div class="tab-content">
+                                                <div role="tabpanel" class="tab-pane fade show active" id="profile">
+                                                            <div class="row">
+                                                                <div class="col-md-2">
+                                                                    <label>Email</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <p>{{user.email}}</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-2">
+                                                                    <label>Mobile</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <p>{{user.phone}}</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-2">
+                                                                    <label>website</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <a target="_blank" href="www.{{user.website}}">{{user.website}}</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-2">
+                                                                    <label>Adress</label>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <p>{{user.address.street}} {{user.address.suite}}</p>
+                                                                    <p>{{user.address.city}} {{user.address.zipcode}}</p>
+                                                                </div>
+                                                            </div>
+                                                </div>
+                                              </div>
+                          
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,24 @@
+<div class="section">
+    <div class="container-fluid">
+    	<div class="row">
+            <div class="col-md-12">
+    	    </div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-4" *ngFor="let user of users">
+    		    <div class="card profile-card-2">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/877695/pexels-photo-877695.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Card image cap" />
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="https://satishrao.in/wp-content/uploads/2016/06/dummy-profile-pic-male.jpg" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">{{ user.name }}</h5>
+                        <p class="card-text">{{ user.username}}</p>
+                        <p class="card-text"><span class="badge badge-secondary">{{ user.email}}</span></p>
+                        <a routerLink="/users/{{user.id}}" class="btn btn-primary">see more..</a>
+                    </div>
+                </div>
+    		</div>
+    	</div>
+    </div>
+</div>

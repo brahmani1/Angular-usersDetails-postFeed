@@ -1,0 +1,24 @@
+<div class="section">
+    <div class="container-fluid">
+    	<div class="row">
+            <div class="col-md-12">
+    	    </div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-4" *ngFor="let post of posts">
+    		    <div class="card profile-card-2">
+                    <div class="card-img-block">
+                        <img class="img-fluid"  style="height: 50vh;width: 36vw;"
+src="https://www.knowband.com/image/cache/data/plugins/prestashop/facebook-posts-feed/Post-Feed-1000x1000.jpg" alt="Card image cap" />
+                    </div>
+                    <div class="card-body pt-5">
+                        <img style="height: 30px" src="https://lorelleteaches.files.wordpress.com/2013/04/feed-orange-standard-icon.png" alt="profile-image" class="profile"/>
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <p class="card-text">{{ post.body}}</p>
+                        <a routerLink="/posts/{{post.id}}" class="btn btn-primary">see more..</a>
+                    </div>
+                </div>
+    		</div>
+    	</div>
+    </div>
+</div>
